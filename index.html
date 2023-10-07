@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ipw8nzo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="title-container">
+            <h1>Meme Generator</h1>
+            <h2>create your own unique memes</h2>
+        </header>
+
+        <section class="form-container">
+            <form name="generatememe" action="" class="meme-form">
+                <!-- Meme URL -->
+                <div class="meme-url-container">
+                    <label for="memeURL">Image URL:</label>
+                    <input class="meme-url" type="url" placeholder="Enter your URL here" name="memeURLinput">
+                </div>
+
+                <!-- Text on Top -->
+                <div class="top-text-container">
+                    <label for="toptext">Text on Top:</label>
+                    <input class="top-text-input" type="text" name="toptext" placeholder="Enter the text on top here">
+                </div>
+
+                <!-- Text on Bottom -->
+                <div class="btm-text-container">
+                    <label for="btmtext">Text on Bottom:</label>
+                    <input class="btm-text-input" type="text" name="btmtext" placeholder="Eneter the text on bottom here">
+                </div>
+
+                <!-- Submit Button -->
+                <div class="submit-meme-container">
+                    <input class="submit-meme" type="submit" value="Generate Meme">
+                </div>
+            </form>
+        </section>
+
+        <section class="meme-gallery">
+            <h3>Meme Gallery</h3>
+            <ul class="gallery"></ul>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
